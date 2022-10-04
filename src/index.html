@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/app.css">
   <title>Портал «Music Box»</title>
 </head>
 <body>
-  
+  <section class="first-section bg-main" id="page-description">
+    <div class="container">
+      <header class="header text-uppercase">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Логотип сайта">
+          <div class="text-white">Music Box</div>
+        </div>
+        <nav class="menu">
+          <a href="#">Главная</a>
+          <a href="#">Каталог</a>
+          <a href="#">Исполнители</a>
+          <a href="#">Контакты</a>
+        </nav>
+        <input type="text" class="header-search text-white" placeholder="Поиск...">
+      </header>
+      
+      <div class="text-center">
+        <h1>Онлайн музыка где угодно</h1>
+        <h2>без ограничений</h2>
+        <p class="text-white description-form">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="registration-form">
+          <div class="floating-label">
+            <input class="text-white" type="text" id="name" placeholder="Имя">
+            <label for="name" class="">Имя</label>
+          </div>
+
+          <div class="floating-label">
+            <input class="text-white" type="email" id="email" placeholder="Email">
+            <label for="email" class="">Email</label>
+          </div>
+          <button type="submit" class="text-white">Получить доступ</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+      <h1>section #2</h1>
+    </div>
+  </section>
+
 </body>
 </html>

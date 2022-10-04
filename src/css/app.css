@@ -1,1 +1,260 @@
-/*# sourceMappingURL=app.css.map */
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+h1,
+h2,
+h3 {
+  font: 700 60px/1.5 Roboto, sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+body {
+  min-width: 310px;
+  margin: 0;
+  padding: 0;
+  font: 400 18px/1.5 Roboto, sans-serif;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+.container {
+  position: relative;
+  padding: 200px 0;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
+.first-section {
+  position: relative;
+}
+.first-section::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+}
+.first-section .header {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 25px;
+  width: 100%;
+  font-size: 11px;
+}
+.first-section .header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+.first-section .header .logo img {
+  height: 24px;
+  margin-right: 16px;
+}
+.first-section .header .menu {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  flex-wrap: wrap;
+}
+.first-section .header .menu a {
+  text-decoration: none;
+  color: #cacaca;
+}
+.first-section .header .menu a:hover {
+  color: #fff;
+}
+.first-section .header .header-search {
+  min-width: 150px;
+  width: 248px;
+  height: 25px;
+  background-color: #3C3B3D;
+  border-radius: 50px;
+  border: none;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 10px;
+}
+.first-section .header .header-search::-moz-placeholder {
+  text-transform: uppercase;
+}
+.first-section .header .header-search:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+.first-section .header .header-search::placeholder {
+  text-transform: uppercase;
+}
+.first-section .description-form {
+  font-size: 16px;
+  margin-top: 31px;
+}
+.first-section .registration-form {
+  display: flex;
+  max-width: 570px;
+  display: flex;
+  margin: 0 auto;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  flex-wrap: wrap;
+}
+.first-section .registration-form .floating-label {
+  position: relative;
+  margin: 0 auto;
+  min-width: 270px;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.first-section .registration-form .floating-label label {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  font-size: 13px;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.first-section .registration-form .floating-label input {
+  box-sizing: border-box;
+  background: transparent;
+  width: 100%;
+  min-height: 50px;
+  padding-left: 20px;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  outline-color: #fff;
+}
+.first-section .registration-form .floating-label input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.first-section .registration-form .floating-label input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.first-section .registration-form .floating-label input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.first-section .registration-form .floating-label input:not(:-moz-placeholder-shown) {
+  padding-top: 10px;
+}
+.first-section .registration-form .floating-label input:not(:-ms-input-placeholder) {
+  padding-top: 10px;
+}
+.first-section .registration-form .floating-label input:not(:placeholder-shown) {
+  padding-top: 10px;
+}
+.first-section .registration-form .floating-label input:not(:-moz-placeholder-shown) + label {
+  opacity: 1;
+}
+.first-section .registration-form .floating-label input:not(:-ms-input-placeholder) + label {
+  opacity: 1;
+}
+.first-section .registration-form .floating-label input:not(:placeholder-shown) + label {
+  opacity: 1;
+}
+.first-section .registration-form button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #34C176;
+  border: none;
+}
+.first-section .registration-form button:hover {
+  background: #48cc6e;
+}
+.first-section .registration-form button:hover:active {
+  transform: scale(0.99);
+}
+
+@media screen and (max-width: 414px) {
+  .first-section .container {
+    padding-top: 250px;
+  }
+  .first-section .container .header {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 17px;
+    width: calc(100% - 40px);
+  }
+  .first-section .container .header .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .first-section .container .header .menu a {
+    font-weight: 700;
+  }
+  .first-section .container .header .header-search {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .first-section .container .description-form {
+    margin-top: 16px;
+  }
+}/*# sourceMappingURL=app.css.map */
