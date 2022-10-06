@@ -17,8 +17,7 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
   margin: 0;
 
   color: #fff;
@@ -53,11 +52,15 @@ body {
 
   width: 1200px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding-top: 100px;
 }
 
 .text-white {
   color: $white;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-uppercase {
@@ -72,13 +75,68 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1240px) {
-  .container {
-    width: 100%;
+.text-size1 {
+  font-size: 16px;
+}
+
+.text-small {
+  font-size: 12.8px;
+}
+
+.text-size7 {
+  font-size: 64px;
+}
+
+.text-size3 {
+  font-size: 32px;
+}
+
+.my-64 {
+  margin: 64px 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 20px 30px;
+
+  color: $white;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  &:active {
+    transform: scale(0.98);
   }
 }
 
-@media screen and (max-width: 414px) {
+.bg-free {
+  background-image: url("../images/subscribe_1.png");
+  background-size: cover;
+}
+
+.bg-standard {
+  background-image: url("../images/subscribe_2.png");
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/subscribe_3.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 1239px) {
+  .container {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 637px) {
   h1 {
     font-size: 30px;
   }
@@ -87,9 +145,9 @@ body {
     font-size: 18px;
   }
 
-  .container {
-    box-sizing: border-box;
-    padding-right: 20px;
-    padding-left: 20px;
+  h3 {
+    margin: 0;
+
+    font-size: 16px;
   }
 }

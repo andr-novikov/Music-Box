@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="stylesheet" href="./css/app.css">
   <title>Портал «Music Box»</title>
 </head>
 <body>
@@ -13,10 +13,10 @@
       <header class="header text-uppercase">
         <div class="logo">
           <img src="./images/logo.svg" alt="Логотип сайта">
-          <div class="text-white">Music Box</div>
+          <div class="text-white font-bold">Music Box</div>
         </div>
         <nav class="menu">
-          <a href="#">Главная</a>
+          <a href="#" class="font-bold">Главная</a>
           <a href="#">Каталог</a>
           <a href="#">Исполнители</a>
           <a href="#">Контакты</a>
@@ -27,26 +27,49 @@
       <div class="text-center">
         <h1>Онлайн музыка где угодно</h1>
         <h2>без ограничений</h2>
-        <p class="text-white description-form">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <p class="text-size1 text-white description-form">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
         <form class="registration-form">
           <div class="floating-label">
-            <input class="text-white" type="text" id="name" placeholder="Имя">
+            <input class="text-white font-bold" type="text" id="name" placeholder="Имя">
             <label for="name" class="">Имя</label>
           </div>
-
           <div class="floating-label">
-            <input class="text-white" type="email" id="email" placeholder="Email">
+            <input class="text-white font-bold" type="email" id="email" placeholder="Email">
             <label for="email" class="">Email</label>
           </div>
-          <button type="submit" class="text-white">Получить доступ</button>
+          <button type="submit" class="btn">Получить доступ</button>
         </form>
       </div>
     </div>
   </section>
 
-  <section class="pricing-section">
+  <section class="pricing-section" id="page-pricing">
     <div class="container">
-      <h1>section #2</h1>
+      <h2 class="text-center">Формы подписки</h2>
+      <div class="flex-price text-white text-center">
+
+        <div class="pricing-item bg-free">
+          <h3 class="upper-text">Бесплатная</h3>
+          <p class="pricing-value text-uppercase text-size7">0 <span class="text-size3 pricing-currency">руб.</span></p>
+          <button class="btn text-size1">Оформить</button>
+          <p class="pricing-footer text-small my-64">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+        </div>
+
+        <div class="pricing-item bg-standard">
+          <h3 class="upper-text">Стандартная</h3>
+          <p class="pricing-value text-uppercase text-size7">250 <span class="text-size3 pricing-currency">руб.</span></p>
+          <button class="btn text-size1">Оформить</button>
+          <p class="pricing-footer text-small my-64">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+        </div>
+        
+        <div class="pricing-item bg-premium">
+          <h3 class="upper-text">Премиум</h3>
+          <p class="pricing-value text-uppercase text-size7">500 <span class="text-size3 pricing-currency">руб.</span></p>
+          <button class="btn text-size1">Оформить</button>
+          <p class="pricing-footer text-small my-64">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+        </div>
+      </div>
+      <p class="pricing-section-footer text-size1 text-center text-white">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </div>
   </section>
 

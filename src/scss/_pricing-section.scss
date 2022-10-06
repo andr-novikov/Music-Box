@@ -1,0 +1,37 @@
+.flex-price {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 50px;
+
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.pricing-item {
+  flex-basis: 340px;
+  padding: 0 1.5rem;
+
+  border-radius: 1rem;
+
+  .pricing-value {
+    margin: 200px 0 55px;
+
+    line-height: 2rem;
+    vertical-align: super;
+  }
+
+  .pricing-currency {
+    vertical-align: super;
+  }
+}
+
+.pricing-section-footer {
+  margin: 40px 0 0;
+}
+
+@media (max-width: 1040px) {
+  .flex-price {
+    flex-wrap: wrap;
+  }
+}
