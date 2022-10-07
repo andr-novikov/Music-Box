@@ -1,21 +1,24 @@
-.flex-price {
-  display: flex;
-  flex-wrap: nowrap;
+.pricing-list {
   justify-content: space-around;
   margin-top: 50px;
+  padding-left: 0;
 
   column-gap: 50px;
   row-gap: 50px;
+
+  list-style: none;
 }
 
 .pricing-item {
   flex-basis: 340px;
   padding: 0 1.5rem;
 
+  background-size: cover;
   border-radius: 1rem;
 
   .pricing-value {
     margin: 200px 0 55px;
+    padding-top: 5px;
 
     line-height: 2rem;
     vertical-align: super;
@@ -24,14 +27,20 @@
   .pricing-currency {
     vertical-align: super;
   }
+
+  // del after check
+  .btn {
+    padding: 22px 30px;
+  }
+  // del after check
 }
 
 .pricing-section-footer {
   margin: 40px 0 0;
 }
 
-@media (max-width: 1040px) {
-  .flex-price {
+@media (max-width: 992px) {
+  .pricing-list {
     flex-wrap: wrap;
   }
 }

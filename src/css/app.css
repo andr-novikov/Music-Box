@@ -28,7 +28,14 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 24px;
-  line-height: 45px;
+}
+
+a {
+  color: #cacaca;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
 }
 
 body {
@@ -47,8 +54,16 @@ body {
   padding-top: 100px;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .text-white {
   color: #fff;
+}
+
+.text-orange {
+  color: #f89202;
 }
 
 .font-bold {
@@ -90,12 +105,18 @@ body {
 .btn {
   width: 100%;
   padding: 20px 30px;
+  box-sizing: border-box;
   color: #fff;
   font-family: Roboto, sans-serif;
   text-transform: uppercase;
   background: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #48cc6e;
 }
 .btn:active {
   transform: scale(0.98);
@@ -103,17 +124,14 @@ body {
 
 .bg-free {
   background-image: url("../images/subscribe_1.png");
-  background-size: cover;
 }
 
 .bg-standard {
   background-image: url("../images/subscribe_2.png");
-  background-size: cover;
 }
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
-  background-size: cover;
 }
 
 @media screen and (max-width: 1239px) {
@@ -132,7 +150,6 @@ body {
     font-size: 18px;
   }
   h3 {
-    margin: 0;
     font-size: 16px;
   }
 }
@@ -155,7 +172,6 @@ body {
 .first-section .header {
   position: absolute;
   top: 25px;
-  display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 11px;
@@ -164,7 +180,6 @@ body {
   row-gap: 17px;
 }
 .first-section .header .logo {
-  display: flex;
   align-items: center;
   margin-right: 66px;
   white-space: nowrap;
@@ -174,18 +189,9 @@ body {
   margin-right: 16px;
 }
 .first-section .header .menu {
-  display: flex;
-  flex-wrap: nowrap;
   align-items: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
-}
-.first-section .header .menu a {
-  color: #cacaca;
-  text-decoration: none;
-}
-.first-section .header .menu a:hover {
-  color: #fff;
 }
 .first-section .header .header-search {
   box-sizing: border-box;
@@ -212,7 +218,6 @@ body {
   margin-top: 31px;
 }
 .first-section .registration-form {
-  display: flex;
   flex-wrap: wrap;
   max-width: 570px;
   margin: 0 auto;
@@ -307,47 +312,103 @@ body {
     font-weight: 700;
   }
   .first-section .container .header .header-search {
-    box-sizing: border-box;
     width: 100%;
-    margin: 0;
   }
   .first-section .container .description-form {
     margin-top: 16px;
   }
-  .first-section .container .registration-form {
-    max-width: 350px;
-  }
 }
-.flex-price {
-  display: flex;
-  flex-wrap: nowrap;
+.pricing-list {
   justify-content: space-around;
   margin-top: 50px;
+  padding-left: 0;
   -moz-column-gap: 50px;
        column-gap: 50px;
   row-gap: 50px;
+  list-style: none;
 }
 
 .pricing-item {
   flex-basis: 340px;
   padding: 0 1.5rem;
+  background-size: cover;
   border-radius: 1rem;
 }
 .pricing-item .pricing-value {
   margin: 200px 0 55px;
+  padding-top: 5px;
   line-height: 2rem;
   vertical-align: super;
 }
 .pricing-item .pricing-currency {
   vertical-align: super;
 }
+.pricing-item .btn {
+  padding: 22px 30px;
+}
 
 .pricing-section-footer {
   margin: 40px 0 0;
 }
 
-@media (max-width: 1040px) {
-  .flex-price {
+@media (max-width: 992px) {
+  .pricing-list {
     flex-wrap: wrap;
+  }
+}
+.mt-24 {
+  margin-top: 24px;
+}
+
+.news-list {
+  flex-direction: column;
+  row-gap: 65px;
+  margin-top: 48px;
+}
+
+.news-item {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+}
+.news-item .news-img {
+  flex-basis: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-item .news-body {
+  flex-basis: 100%;
+}
+.news-item .news-body h3 {
+  margin-top: 0;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.news-item .news-body .news-footer {
+  font-size: 12px;
+}
+.news-item .news-body .news-footer .news-author {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-bottom: 48px;
+}
+.news-item .news-body .news-footer .btn {
+  display: block;
+  width: 135px;
+  padding: 16px 30px;
+}
+
+@media (max-width: 992px) {
+  .news-item {
+    flex-direction: column;
+  }
+  .news-item h3 {
+    font-size: 16px;
+  }
+  .news-item .news-img {
+    order: -1;
+  }
+  .news-img {
+    width: 100%;
   }
 }/*# sourceMappingURL=app.css.map */

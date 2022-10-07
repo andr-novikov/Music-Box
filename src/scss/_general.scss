@@ -32,7 +32,15 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 24px;
-  line-height: 45px;
+}
+
+a {
+  color: $base-gray;
+  text-decoration: none;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 body {
@@ -55,8 +63,16 @@ body {
   padding-top: 100px;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .text-white {
   color: $white;
+}
+
+.text-orange {
+  color: $orange;
 }
 
 .font-bold {
@@ -98,6 +114,7 @@ body {
 .btn {
   width: 100%;
   padding: 20px 30px;
+  box-sizing: border-box;
 
   color: $white;
   font-family: Roboto, sans-serif;
@@ -107,6 +124,14 @@ body {
   border: 1px solid $white;
   border-radius: 5px;
 
+  cursor: pointer;
+
+  transition: all 0.3s;
+
+  &:hover {
+    background: $green-hover;
+  }
+
   &:active {
     transform: scale(0.98);
   }
@@ -114,17 +139,14 @@ body {
 
 .bg-free {
   background-image: url("../images/subscribe_1.png");
-  background-size: cover;
 }
 
 .bg-standard {
   background-image: url("../images/subscribe_2.png");
-  background-size: cover;
 }
 
 .bg-premium {
   background-image: url("../images/subscribe_3.png");
-  background-size: cover;
 }
 
 @media screen and (max-width: 1239px) {
@@ -146,8 +168,6 @@ body {
   }
 
   h3 {
-    margin: 0;
-
     font-size: 16px;
   }
 }

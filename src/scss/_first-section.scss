@@ -23,7 +23,6 @@
     position: absolute;
     top: 25px;
 
-    display: flex;
     justify-content: space-between;
     width: 100%;
 
@@ -33,7 +32,6 @@
     row-gap: 17px;
 
     .logo {
-      display: flex;
       align-items: center;
       margin-right: 66px;
 
@@ -46,20 +44,9 @@
     }
 
     .menu {
-      display: flex;
-      flex-wrap: nowrap;
       align-items: center;
 
       column-gap: 24px;
-
-      a {
-        color: $base-gray;
-        text-decoration: none;
-
-        &:hover {
-          color: $white;
-        }
-      }
     }
 
     .header-search {
@@ -86,7 +73,6 @@
   }
 
   .registration-form {
-    display: flex;
     flex-wrap: wrap;
     max-width: 570px;
     margin: 0 auto;
@@ -189,18 +175,12 @@
         }
 
         .header-search {
-          box-sizing: border-box;
           width: 100%;
-          margin: 0;
         }
       }
 
       .description-form {
         margin-top: 16px;
-      }
-
-      .registration-form {
-        max-width: 350px;
       }
     }
   }

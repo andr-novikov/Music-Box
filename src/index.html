@@ -10,13 +10,13 @@
 <body>
   <section class="first-section bg-main" id="page-description">
     <div class="container">
-      <header class="header text-uppercase">
-        <div class="logo">
+      <header class="header d-flex text-uppercase">
+        <div class="logo d-flex">
           <img src="./images/logo.svg" alt="Логотип сайта">
           <div class="text-white font-bold">Music Box</div>
         </div>
-        <nav class="menu">
-          <a href="#" class="font-bold">Главная</a>
+        <nav class="menu d-flex">
+          <a href="#" class="text-white font-bold">Главная</a>
           <a href="#">Каталог</a>
           <a href="#">Исполнители</a>
           <a href="#">Контакты</a>
@@ -28,7 +28,7 @@
         <h1>Онлайн музыка где угодно</h1>
         <h2>без ограничений</h2>
         <p class="text-size1 text-white description-form">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-        <form class="registration-form">
+        <form class="registration-form d-flex">
           <div class="floating-label">
             <input class="text-white font-bold" type="text" id="name" placeholder="Имя">
             <label for="name" class="">Имя</label>
@@ -46,30 +46,70 @@
   <section class="pricing-section" id="page-pricing">
     <div class="container">
       <h2 class="text-center">Формы подписки</h2>
-      <div class="flex-price text-white text-center">
+      <ul class="pricing-list d-flex text-white text-center">
 
-        <div class="pricing-item bg-free">
+        <li class="pricing-item bg-free">
           <h3 class="upper-text">Бесплатная</h3>
           <p class="pricing-value text-uppercase text-size7">0 <span class="text-size3 pricing-currency">руб.</span></p>
           <button class="btn text-size1">Оформить</button>
           <p class="pricing-footer text-small my-64">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
-        </div>
+        </li>
 
-        <div class="pricing-item bg-standard">
+        <li class="pricing-item bg-standard">
           <h3 class="upper-text">Стандартная</h3>
           <p class="pricing-value text-uppercase text-size7">250 <span class="text-size3 pricing-currency">руб.</span></p>
           <button class="btn text-size1">Оформить</button>
           <p class="pricing-footer text-small my-64">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
-        </div>
+        </li>
         
-        <div class="pricing-item bg-premium">
+        <li class="pricing-item bg-premium">
           <h3 class="upper-text">Премиум</h3>
           <p class="pricing-value text-uppercase text-size7">500 <span class="text-size3 pricing-currency">руб.</span></p>
           <button class="btn text-size1">Оформить</button>
           <p class="pricing-footer text-small my-64">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+        </li>
+      </ul>
+      <p class="pricing-section-footer text-size1 text-center text-white">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+    </div>
+  </section>
+
+  <section class="news-section" id="page-news">
+    <div class="container">
+      <h2 class="text-center">Последние новости</h2>
+      <div class="news-list d-flex">
+
+        <div class="news-item d-flex">
+          <img class="news-img" src="/src/images/Music to Be Murdered By.png" alt="album cover">
+          <div class="news-body">
+            <h3 class="text-white">Music to Be Murdered By</h3>
+            <p class="text-size1">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+            <div class="news-footer mt-24">
+              <div class="news-author d-flex">
+                <img src="/src/images/avatar.png" alt="">
+                <div class="upper-text text-orange">Music box</div>
+                <div>17/01/2020</div>
+              </div>
+              <a href="#" class="btn text-center">К альбому</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-item d-flex">
+          <div class="news-body">
+            <h3 class="text-white">Ordinary Man</h3>
+            <p class="text-size1">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+            <div class="news-footer">
+              <div class="news-author d-flex">
+                <img src="/src/images/avatar.png" alt="">
+                <div class="upper-text text-orange">Music box</div>
+                <div>24/02/2020</div>
+              </div>
+              <a href="#" class="btn text-center">К альбому</a>
+            </div>
+          </div>
+          <img class="news-img" src="/src/images/Ordinary Man.png" alt="Ozzy Osbourne photo">
         </div>
       </div>
-      <p class="pricing-section-footer text-size1 text-center text-white">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
     </div>
   </section>
 
