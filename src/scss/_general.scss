@@ -16,6 +16,18 @@
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
+body {
+  min-width: 310px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $base-gray;
+  font: 400 18px/1.5 Roboto, sans-serif;
+
+  background-color: $main-bg;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -39,36 +51,77 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: $white;
+    color: $white !important;
   }
-}
-
-body {
-  min-width: calc(270px + 40px);
-
-  margin: 0;
-  padding: 0;
-
-  color: $base-gray;
-  font: 400 18px/1.5 Roboto, sans-serif;
-
-  background-color: $main-bg;
 }
 
 .container {
   position: relative;
 
-  width: 1200px;
+  box-sizing: border-box;
+
+  max-width: 1240px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .d-flex {
   display: flex;
 }
 
+.list {
+  margin: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 30px;
+
+  color: $white;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: all 150ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: $green-hover;
+    outline: none;
+
+    transform: scale(1.02);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
 .text-white {
   color: $white;
+}
+
+.text-gray {
+  color: $gray;
 }
 
 .text-orange {
@@ -81,6 +134,10 @@ body {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
 }
 
 .text-center {
@@ -111,32 +168,6 @@ body {
   margin: 64px 0;
 }
 
-.btn {
-  width: 100%;
-  padding: 20px 30px;
-  box-sizing: border-box;
-
-  color: $white;
-  font-family: Roboto, sans-serif;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 1px solid $white;
-  border-radius: 5px;
-
-  cursor: pointer;
-
-  transition: all 0.3s;
-
-  &:hover {
-    background: $green-hover;
-  }
-
-  &:active {
-    transform: scale(0.98);
-  }
-}
-
 .bg-free {
   background-image: url("../images/subscribe_1.png");
 }
@@ -149,16 +180,7 @@ body {
   background-image: url("../images/subscribe_3.png");
 }
 
-@media screen and (max-width: 1239px) {
-  .container {
-    box-sizing: border-box;
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media screen and (max-width: 637px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
   }
