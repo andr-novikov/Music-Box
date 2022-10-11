@@ -1,0 +1,42 @@
+.app-section {
+  .container {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    margin-bottom: 48px;
+  }
+}
+
+.app-body {
+  .btn {
+    width: max-content;
+    padding: 16px 40px;
+
+    background: $brown;
+    border: none;
+    border-radius: 32px;
+  }
+
+  .app-img {
+    flex-basis: 100%;
+
+    text-align: center;
+
+    img {
+      max-width: 100%;
+
+      vertical-align: top;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-body {
+    flex-wrap: wrap;
+
+    .app-img {
+      order: -1;
+    }
+  }
+}
