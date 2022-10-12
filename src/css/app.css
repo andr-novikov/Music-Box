@@ -97,6 +97,10 @@ a:hover {
   margin: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -557,18 +561,16 @@ a:hover {
 }
 .popular-tracks .track {
   margin-right: 50px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
   align-items: center;
+}
+.popular-tracks .track .track-cover {
+  width: 55px;
+  margin-right: 15px;
 }
 .popular-tracks .track-info {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-}
-
-.album-cover {
-  width: 55px;
 }
 
 @media (max-width: 768px) {
@@ -577,5 +579,28 @@ a:hover {
   }
   .popular-tracks .track {
     margin: 0;
+  }
+}
+.discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px 0;
+}
+
+.discography-item {
+  flex-direction: column;
+  margin-right: 49px;
+}
+
+.album-cover {
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .discography {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .album-cover {
+    width: 137px;
   }
 }/*# sourceMappingURL=app.css.map */
