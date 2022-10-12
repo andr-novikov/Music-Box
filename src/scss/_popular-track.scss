@@ -1,0 +1,37 @@
+.popular-track-section {
+}
+
+.popular-tracks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 0;
+
+  .track {
+    margin-right: 50px;
+
+    column-gap: 15px;
+    align-items: center;
+  }
+
+  .track-info {
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+.album-cover {
+  width: 55px;
+}
+
+
+
+@media (max-width: 768px) {
+  .popular-tracks {
+    grid-template-columns: 1fr;
+
+    .track {
+      margin: 0;
+    }
+  }
+}
