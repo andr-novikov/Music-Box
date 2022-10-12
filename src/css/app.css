@@ -56,16 +56,6 @@ a:hover {
   padding-left: 20px;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.list {
-  margin: 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-
 .btn {
   display: block;
   box-sizing: border-box;
@@ -81,12 +71,21 @@ a:hover {
   transition: all 150ms ease-in-out;
 }
 .btn:hover, .btn:focus {
-  background: #48cc6e;
+  background-color: #34c176;
   outline: none;
-  transform: scale(1.02);
 }
 .btn:active {
   transform: scale(0.99);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .mx-auto {
@@ -129,24 +128,39 @@ a:hover {
   text-transform: uppercase;
 }
 
-.text-size1 {
-  font-size: 16px;
-}
-
 .text-small {
   font-size: 12.8px;
 }
 
-.text-size7 {
-  font-size: 64px;
+.text-size1 {
+  font-size: 16px;
 }
 
 .text-size3 {
   font-size: 32px;
 }
 
+.text-size7 {
+  font-size: 64px;
+}
+
 .my-64 {
   margin: 64px 0;
+}
+
+.bg-green {
+  background-color: #34c176;
+  border-color: #34c176;
+}
+
+.bg-purple {
+  background-color: #5328a1;
+  border-color: #5328a1;
+}
+
+.bg-brown {
+  background-color: #95390c;
+  border-color: #95390c;
 }
 
 .bg-free {
@@ -177,6 +191,7 @@ a:hover {
   top: 25px;
   right: 0;
   left: 0;
+  z-index: 1;
   align-items: center;
   justify-content: space-between;
   font-size: 11px;
@@ -310,10 +325,6 @@ a:hover {
 .registration-form .floating-label input:not(:placeholder-shown) + label {
   opacity: 1;
 }
-.registration-form .btn {
-  background: #34c176;
-  border-color: #34c176;
-}
 
 @media screen and (max-width: 768px) {
   .first-section .container {
@@ -440,8 +451,6 @@ a:hover {
   width: -moz-max-content;
   width: max-content;
   padding: 16px 40px;
-  background: #95390c;
-  border: none;
   border-radius: 32px;
 }
 .app-body .app-img {
@@ -508,5 +517,42 @@ a:hover {
   .footer-bottom {
     flex-direction: column;
     row-gap: 16px;
+  }
+}
+.artist-info {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+.artist-info .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.artist-info h1 {
+  margin-top: 0.83em;
+}
+.artist-info .owners {
+  margin-bottom: 48px;
+}
+.artist-info .buttons {
+  display: flex;
+  margin-bottom: 23px;
+  gap: 1.5rem;
+}
+.artist-info .btn {
+  width: 200px;
+  text-align: left;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.artist-info .btn-icon {
+  width: 20px;
+  filter: invert(100%);
+}
+
+@media (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=app.css.map */

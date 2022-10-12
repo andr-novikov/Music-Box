@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/app.css">
   <title>Портал «Music Box»</title>
 </head>
 <body>
-  
+  <header class="header container d-flex text-uppercase">
+    <div class="logo d-flex">
+      <img src="./images/logo.svg" alt="Логотип сайта">
+      <div class="text-white font-bold">Music Box</div>
+    </div>
+    <nav class="menu">
+      <ul class="list d-flex">
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="./artist.html" class="text-white font-bold">Исполнители</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <input type="text" class="header-search text-white" placeholder="Поиск...">
+  </header>
+  <main>
+    <section class="artist-info bg-main" id="page-description">
+      <div class="container">
+        <h1>Morten Harket</h1>
+        <p class="owners text-size1 text-white">24 875 поклонников</p>
+        <div class="buttons">
+          <button class="btn d-flex text-small bg-purple">
+            <img class="btn-icon" src="./images/play-button.svg" alt="play-button icon">
+            <span>Микс</span>
+          </button>
+          <button class="btn d-flex text-small bg-brown">
+            <img class="btn-icon" src="./images/heart.svg" alt="heart icon">
+            <span>В избранное</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
