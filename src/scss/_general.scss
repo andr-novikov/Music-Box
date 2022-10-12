@@ -44,6 +44,7 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 a {
@@ -66,17 +67,6 @@ a {
   padding-left: 20px;
 }
 
-.d-flex {
-  display: flex;
-}
-
-.list {
-  margin: 0;
-  padding-left: 0;
-
-  list-style-type: none;
-}
-
 .btn {
   display: block;
   box-sizing: border-box;
@@ -97,10 +87,10 @@ a {
 
   &:hover,
   &:focus {
-    background: $green-hover;
+    background-color: $green;
     outline: none;
 
-    transform: scale(1.02);
+    // transform: scale(1.02);
   }
 
   &:active {
@@ -108,8 +98,27 @@ a {
   }
 }
 
+.d-flex {
+  display: flex;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+
+  list-style-type: none;
+}
+
 .mx-auto {
   margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .pt-100 {
@@ -148,24 +157,39 @@ a {
   text-transform: uppercase;
 }
 
-.text-size1 {
-  font-size: 16px;
-}
-
 .text-small {
   font-size: 12.8px;
 }
 
-.text-size7 {
-  font-size: 64px;
+.text-size1 {
+  font-size: 16px;
 }
 
 .text-size3 {
   font-size: 32px;
 }
 
+.text-size7 {
+  font-size: 64px;
+}
+
 .my-64 {
   margin: 64px 0;
+}
+
+.bg-green {
+  background-color: $green;
+  border-color: $green;
+}
+
+.bg-purple {
+  background-color: $purple;
+  border-color: $purple;
+}
+
+.bg-brown {
+  background-color: $brown;
+  border-color: $brown;
 }
 
 .bg-free {
