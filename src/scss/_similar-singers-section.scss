@@ -1,0 +1,15 @@
+.similar-singers {
+  @include grid-collection;
+}
+
+@media (max-width: 768px) {
+  .similar-singers {
+    grid-template-columns: repeat(2, minmax(137px, 1fr));
+  }
+
+  .similar-item {
+    .similar-cover {
+      width: 137px;
+    }
+  }
+}
