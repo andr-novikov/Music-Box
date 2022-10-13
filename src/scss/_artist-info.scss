@@ -14,17 +14,17 @@
 
   .buttons {
     display: flex;
-    margin-bottom: 23px;
-
     gap: 1.5rem;
+    margin-bottom: 23px;
   }
 
   .btn {
+    align-items: center;
     width: 200px;
+
     text-align: left;
 
     column-gap: 16px;
-    align-items: center;
   }
 
   .btn-icon {
@@ -33,7 +33,6 @@
     filter: invert(100%);
   }
 }
-
 
 @media (max-width: 576px) {
   .buttons {

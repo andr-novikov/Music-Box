@@ -16,6 +16,12 @@
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
+@mixin grid-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px 0;
+}
+
 body {
   min-width: 310px;
 
@@ -88,9 +94,6 @@ a {
   &:hover,
   &:focus {
     background-color: $green;
-    outline: none;
-
-    // transform: scale(1.02);
   }
 
   &:active {
@@ -100,6 +103,10 @@ a {
 
 .d-flex {
   display: flex;
+}
+
+.d-block {
+  display: block;
 }
 
 .list {
@@ -125,8 +132,20 @@ a {
   margin-bottom: 48px;
 }
 
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
 .pt-100 {
   padding-top: 100px;
+}
+
+.w-250 {
+  width: 250px;
 }
 
 .text-white {
@@ -181,19 +200,26 @@ a {
   margin: 64px 0;
 }
 
-.bg-green {
-  background-color: $green;
+.btn-green {
+  background-color: $green !important;
   border-color: $green;
 }
 
-.bg-purple {
-  background-color: $purple;
+.btn-purple {
+  background-color: $purple !important;
   border-color: $purple;
 }
 
-.bg-brown {
-  background-color: $brown;
+.btn-brown {
+  background-color: $brown !important;
   border-color: $brown;
+}
+
+.color-btn-hover {
+  &:hover,
+  &:focus {
+    border-color: $green;
+  }
 }
 
 .bg-free {

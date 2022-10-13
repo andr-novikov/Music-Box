@@ -23,11 +23,18 @@
 
     font-size: 30px;
   }
+
+  .news {
+    margin-bottom: 24px;
+  }
+
+  // dell after check
+  .news-err {
+    margin-bottom: 15px;
+  }
 }
 
 .news-footer {
-  margin-top: 24px;
-
   font-size: 12px;
 
   .news-author {

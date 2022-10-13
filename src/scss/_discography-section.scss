@@ -1,21 +1,15 @@
 .discography {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px 0;
-}
-
-.discography-item {
-  flex-direction: column;
-  margin-right: 49px;
-}
-
-.album-cover {
-  max-width: 250px;
+  @include grid-collection;
 }
 
 @media (max-width: 768px) {
   .discography {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+
+  // dell after check
+  .discography-item {
+    margin-right: 49px;
   }
 
   .album-cover {
