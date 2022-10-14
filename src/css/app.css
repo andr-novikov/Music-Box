@@ -246,6 +246,9 @@ a:hover {
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
+.header .menu .list a {
+  display: block;
+}
 .header .header-search {
   box-sizing: border-box;
   width: 248px;
@@ -275,9 +278,14 @@ a:hover {
   .header .list {
     flex-direction: column;
     align-items: flex-start;
+    row-gap: 3px;
   }
   .header .list a {
     font-weight: 700;
+    line-height: 13px;
+  }
+  .header .header-search {
+    width: 100%;
   }
 }
 .first-section {
@@ -364,7 +372,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .first-section .container {
-    padding-top: 250px;
+    padding-top: 248px;
   }
   .first-section .container .description-form {
     margin-top: 16px;
@@ -397,7 +405,7 @@ a:hover {
   vertical-align: top;
 }
 .pricing-item .btn {
-  padding: 22px 30px;
+  line-height: 1.5;
 }
 
 @media (max-width: 992px) {
@@ -495,6 +503,9 @@ a:hover {
   .app-body .app-img {
     order: -1;
   }
+  .app-body .app-img img {
+    padding-left: 0;
+  }
 }
 .footer {
   padding-top: 62px;
@@ -502,7 +513,7 @@ a:hover {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 .footer h2 {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-size: 18px;
 }
 .footer .footer-top {
@@ -531,6 +542,7 @@ a:hover {
 }
 .footer .footer-bottom {
   margin-top: 40px;
+  margin-bottom: 17px;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }

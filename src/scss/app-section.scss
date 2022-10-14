@@ -28,6 +28,11 @@
 
     .app-img {
       order: -1;
+
+      // dell after check
+      img {
+        padding-left: 0;
+      }
     }
   }
 }
